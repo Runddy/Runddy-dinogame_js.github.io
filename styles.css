@@ -1,0 +1,75 @@
+#score { text-align: center; }
+
+#game {
+  width: 600px;
+  height: 300px;
+  border: 2px solid black;
+  margin: auto;
+  background-image: url("https://thumbs.dreamstime.com/b/environment-game-illustration-dry-ground-sand-dune-green-cactus-succulent-west-landscape-wild-west-vector-background-western-242557352.jpg");
+  background-size: cover;
+}
+
+#cloud{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -125px;
+    left: 50px;
+    background-image: url("https://i.pinimg.com/originals/b8/da/74/b8da7481af688921fe88ed8a3136ad6d.png");
+    background-size: cover;
+    animation:  cloud 2.33s infinite;
+}
+  
+#cloud2{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -135px;
+    left: 50px;
+    background-image: url("https://i.pinimg.com/originals/b8/da/74/b8da7481af688921fe88ed8a3136ad6d.png");
+    background-size: cover;
+    animation:  cloud2 4.66s infinite;
+}
+#dino {
+  height: 75px;
+  width: 75px;
+  top: 175px;
+  position: relative;
+  background-image: url("https://github.com/kriscfoster/chrome-dino-game/blob/master/dino.png?raw=true");
+  background-size: cover;
+}
+
+#cactus {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 135px;
+  left: 550px;
+  background-image: url("https://cdn.pixabay.com/photo/2020/07/06/07/35/cactus-5375863_1280.png");
+  background-size: cover;
+  animation: cactus 1.33s infinite;
+}
+
+@keyframes cactus {
+  0%{left: 550px;}
+  100%{left: -50px;}
+}
+
+.jump-animation {
+  animation: jump 0.5s;
+}
+
+@keyframes jump {
+  0%{top: 125px;}
+  50%{top: 75px;}
+  75%{top: 75px;}
+  100%{top: 125px;}
+}
+@keyframes cloud {
+    0%{left: 550px;}
+    100%{left: -10px;}
+  }
+  @keyframes cloud2 {
+    0%{left: 570px;}
+    100%{left: -10px;}
+  }
